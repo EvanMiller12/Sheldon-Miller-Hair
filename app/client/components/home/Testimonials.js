@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledTestimonials = styled.section`
   .heading {
@@ -10,8 +10,13 @@ const StyledTestimonials = styled.section`
   span {
     margin-left: 30px;
     font-size: 6.5em;
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     color: ${props => props.theme.coral};
+  }
+  b {
+    font-size: 1.8em;
+    color: ${props => props.theme.midGrey};
+    font-weight: 200;
   }
   ul {
     display: flex;
@@ -43,7 +48,7 @@ const Testimonials = () => (
         <li>
           <div className="testimonial">
             <h3>FIRST LAST</h3>
-            <h4>client of 3 years</h4>
+            <b>client of 3 years</b>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate voluptatum officiis, corporis omnis inventore ut.
@@ -55,7 +60,7 @@ const Testimonials = () => (
         <li>
           <div className="testimonial">
             <h3>FIRST LAST</h3>
-            <h4>client of 3 years</h4>
+            <b>client of 3 years</b>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate voluptatum officiis, corporis omnis inventore ut.

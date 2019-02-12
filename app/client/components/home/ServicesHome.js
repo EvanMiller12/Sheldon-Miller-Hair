@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 // scope styles
 
 const StyledServices = styled.section`
-  padding: 50px 0;
 
   .service-section {
     display: flex;
-    height: 100vh;
+    /* flex-direction:column; */
+    height: 90vh;
   }
 
   .service-section > :first-child {
@@ -31,6 +31,7 @@ const StyledServices = styled.section`
     text-align: center;
     height: 50%;
     color: #fff;
+    padding: 5px;
     /* background-color: ${props => props.theme.navy}; */
 
     h3 {
@@ -50,20 +51,28 @@ const StyledServices = styled.section`
   }
   .service-img {
     height: 50%;
-    /* width: 100%; */
-
     img {
       height: 100%;
       width: 100%;
     }
   }
+   @media(max-width: 1024px) {
+     .service-section {
+       height: 50vh;
+     }
+   }
+   @media(max-width: 768px) {
+    .service-content a {
+      margin-top: 10px;
+    }
+   }
 `;
 const ServicesHome = () => (
   <StyledServices>
     <div className="service-section">
       <div className="service-wrapper">
         <div className="service-content">
-          <h3>WOMEN</h3>
+          <h3>Color</h3>
           <ul>
             <li>
               Creative cut- <span>$60 ^</span>
@@ -88,7 +97,7 @@ const ServicesHome = () => (
           <img src="../../static/hair1.jpg" alt="" />
         </div>
         <div className="service-content">
-          <h3>MEN</h3>
+          <h3>Extensions</h3>
           <ul>
             <li>
               Fashion cut with SHampoo and blow-dry - <span>$65 ^</span>
@@ -107,7 +116,7 @@ const ServicesHome = () => (
       </div>
       <div className="service-wrapper">
         <div className="service-content">
-          <h3>KIDS &amp; TEENAGERS</h3>
+          <h3>cuts</h3>
           <ul>
             <li>
               Boy's cuts 12 years and less- <span>$30.00</span>

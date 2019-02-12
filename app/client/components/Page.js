@@ -1,17 +1,22 @@
-import React, { Component } from 'react';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import Nav from './Nav';
-import Meta from './Meta';
-import Footer from './Footer';
-import ContactInfo from './ContactInfo';
+import React, { Component } from "react";
+import styled, { ThemeProvider, injectGlobal } from "styled-components";
+import Nav from "./Nav";
+import Meta from "./Meta";
+import Footer from "./Footer";
+import ContactInfo from "./ContactInfo";
+
+<style>
+  @import
+  url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Nanum+Gothic');
+</style>;
 
 const theme = {
-  navy: '#2e3c40',
-  coral: '#D49F9B',
-  lightGrey: '#C0C0C0',
-  black: '#191818',
-  floralWhite: '#fffaf0'
-  // maxWidth: '1500px'
+  navy: "#2e3c40",
+  coral: "#D49F9B",
+  lightGrey: "#C0C0C0",
+  black: "#191818",
+  floralWhite: "#fffaf0"
+  // maxWidth: "1500px"
   // bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
 };
 
@@ -24,7 +29,7 @@ const Inner = styled.div`
   /* max-width: ${props => props.theme.maxWidth}; */
   /* margin: 0 auto;
   padding: 2rem; */
-  width: 100%;
+  /* width: 100%; */
 `;
 
 injectGlobal`
@@ -32,7 +37,7 @@ injectGlobal`
     box-sizing: border-box;
     font-size: 10px;
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -47,7 +52,11 @@ injectGlobal`
     padding: 0;
     margin: 0;
     line-height: 2;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  section {
+    padding: 4rem 0;
   }
 
   h1,
@@ -56,38 +65,26 @@ injectGlobal`
   h4,
   h5,
   h6 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     text-transform: uppercase;
+    margin: 0;
   }
   h1 {
-    font-size: 7em;
-    letter-spacing: 7px;
-    font-weight: 500;
+    font-size: 6.5em;
   }
   h2 {
-    font-size: 6em;
-    letter-spacing: 4px;
-    font-weight: 300;
+    font-size: 5.5em;
   }
 
   h3 {
-    font-size: 5em;
-    letter-spacing: 3px;
-    font-weight: 300;
-    margin: 0;
+    font-size: 4.5em;
   }
   h4 {
-    font-size: 4em;
-    letter-spacing: 2px;
-    font-weight: 200;
-    margin: 0;
+    font-size: 3.5em;
   }
 
   h5 {
-    font-size: 3em;
-    letter-spacing: 2px;
-    font-weight: 200;
-    margin: 0;
+    font-size: 2.5em;
   }
 
   .sub-title {
@@ -109,10 +106,46 @@ injectGlobal`
     max-width: 100%;
   }
   button {  font-family: 'Oswald', sans-serif; }
-  section {
-    padding: 50px 0;
+
+  .contain {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
-  allow-scrollover-footer {}
+  .allow-scrollover-footer {}
+  @media(max-width: 768px) {
+    h1 {
+    font-size: 4.5em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+  h4 {
+    font-size: 2.0em;
+  }
+
+  h5 {
+    font-size: 1.8em;
+  }
+  a {
+    font-size: 1.6em;
+    color: ${theme.navy};
+    text-decoration: none;
+  }
+  p {
+    font-size: 1.6em;
+  }
+body {
+  line-height: 1.4;
+}
+  section {
+    padding: 25px 0;
+  }
+  }
 `;
 
 class Page extends Component {

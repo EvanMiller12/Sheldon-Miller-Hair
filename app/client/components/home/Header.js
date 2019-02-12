@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import styled from 'styled-components';
-import Router from 'next/router';
-import NProgress from 'nprogress';
+import Link from "next/link";
+import styled from "styled-components";
+import Router from "next/router";
+import NProgress from "nprogress";
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -41,17 +41,15 @@ const HomeHeader = styled.header`
       text-decoration: underline;
     }
   }
+
   .contain {
-    max-width: 90%;
-    /* height: 80vh; */
-    margin: 0 auto;
-    padding: 50px 0;
-    margin-top: 25px;
+    justify-content: space-around;
+    padding-top: 2rem;
   }
+
   .content-left {
-    float: left;
-    clear: both;
-    width: 30%;
+    width: 40%;
+    text-align: center;
 
     i {
       display: block;
@@ -60,8 +58,7 @@ const HomeHeader = styled.header`
     }
   }
   .content-right {
-    float: right;
-    width: 60%;
+    width: 40%;
   }
 `;
 

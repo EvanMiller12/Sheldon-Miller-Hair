@@ -1,14 +1,7 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledHomePortfolio = styled.section`
-  .contain {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding-top: 100px;
-  }
   .content-left {
     width: 50%;
   }

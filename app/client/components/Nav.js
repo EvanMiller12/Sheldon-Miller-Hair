@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledNav = styled.nav`
   .main-nav {
@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
       }
 
       :hover {
-      color: ${props => props.theme.coral};
+        color: ${props => props.theme.coral};
       }
     }
   }
@@ -58,12 +58,12 @@ const StyledNav = styled.nav`
     }
 
     .nav-link {
-      margin-left: 40px;
+      margin-left: 0 0.5rem;
     }
 
     .logo {
-      font-family: 'Lobster', cursive;
-      font-size: 30px;
+      font-family: "Lobster", cursive;
+      font-size: 20px;
       color: ${props => props.theme.coral};
       margin-top: 0;
     }
