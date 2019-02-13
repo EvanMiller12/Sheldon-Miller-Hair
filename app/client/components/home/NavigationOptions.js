@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledNavigationOptions = styled.section`
   .nav-options-content {
@@ -10,6 +10,7 @@ const StyledNavigationOptions = styled.section`
     a {
       border: 1px solid;
       padding: 10px;
+      text-align: center;
     }
 
     a:hover {

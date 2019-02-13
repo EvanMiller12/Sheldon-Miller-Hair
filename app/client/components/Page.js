@@ -5,11 +5,6 @@ import Meta from "./Meta";
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
 
-<style>
-  @import
-  url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Nanum+Gothic');
-</style>;
-
 const theme = {
   navy: "#2e3c40",
   coral: "#D49F9B",

@@ -66,6 +66,18 @@ const StyledServices = styled.section`
       margin-top: 10px;
     }
    }
+   @media(max-width: 696px) {
+     .service-section {
+       display: block;
+       height: auto;
+     }
+     .service-content {
+       padding: 4em 0;
+     }
+     .service-img {
+       display: none;
+     }
+   }
 `;
 const ServicesHome = () => (
   <StyledServices>

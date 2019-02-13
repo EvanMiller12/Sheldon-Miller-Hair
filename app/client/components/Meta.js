@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 const Meta = () => (
   <Head>
@@ -11,7 +11,7 @@ const Meta = () => (
       crossOrigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Anton|Lobster|Oswald"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300|Nanum+Gothic|Lobster"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="/static/favicon.png" />
