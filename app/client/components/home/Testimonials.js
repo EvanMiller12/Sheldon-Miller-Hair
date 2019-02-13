@@ -36,6 +36,15 @@ const StyledTestimonials = styled.section`
     text-align: center;
   }
 
+  @media (max-width: 768px) {
+    .heading {
+      margin-bottom: 25px;
+      span {
+        font-size: 5em;
+      }
+    }
+  }
+
   @media (max-width: 696px) {
     .heading {
       span {
@@ -76,8 +85,6 @@ const Testimonials = () => (
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate voluptatum officiis, corporis omnis inventore ut.
-              Numquam, ab? Quod, reiciendis nam, a accusamus fuga dolorum natus,
-              repellendus rerum numquam explicabo mollitia!
             </p>
           </div>
         </li>
@@ -88,8 +95,6 @@ const Testimonials = () => (
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate voluptatum officiis, corporis omnis inventore ut.
-              Numquam, ab? Quod, reiciendis nam, a accusamus fuga dolorum natus,
-              repellendus rerum numquam explicabo mollitia!
             </p>
           </div>
         </li>

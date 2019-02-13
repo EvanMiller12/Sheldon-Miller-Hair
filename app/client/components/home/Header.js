@@ -33,7 +33,11 @@ const HomeHeader = styled.header`
   }
   li {
     display: inline-block;
-    margin-right: 5px;
+    padding-right: 5px;
+
+    :last-child {
+      padding-right: 0;
+    }
 
     a {
       font-size: 3em;
@@ -50,15 +54,34 @@ const HomeHeader = styled.header`
   .content-left {
     width: 40%;
     text-align: center;
-
-    i {
-      display: block;
-      text-align: center;
-      font-size: 7em;
-    }
   }
   .content-right {
     width: 40%;
+  }
+
+  @media (max-width: 768px) {
+    .header-img {
+      height: 375px;
+    }
+
+    .contain {
+      li {
+        a {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 414px) {
+    .header-img {
+      height: 300px;
+      overflow: visible;
+
+      img {
+        top: 20px;
+      }
+    }
   }
 `;
 
