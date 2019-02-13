@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledImgSlider = styled.div`
   position: relative;
@@ -31,6 +31,7 @@ const StyledImgSlider = styled.div`
     .prev-slide,
     .next-slide {
       position: absolute;
+      top: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -46,22 +47,63 @@ const StyledImgSlider = styled.div`
       cursor: pointer;
     }
     .prev-slide {
-      top: 40%;
       left: 5%;
     }
     .next-slide {
-      top: 40%;
       right: 5%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .img-viewport {
+      ul {
+        li {
+          img {
+            height: 425px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .img-viewport {
+      ul {
+        li {
+          img {
+            height: 325px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 696px) {
+    .img-viewport {
+      ul {
+        li {
+          img {
+            height: 200px;
+          }
+        }
+      }
+
+      .prev-slide,
+      .next-slide {
+        height: 35px;
+        padding: 0 10px;
+        font-size: 2em;
+      }
     }
   }
 `;
 
-const RIGHT = '-1';
-const LEFT = '+1';
+const RIGHT = "-1";
+const LEFT = "+1";
 const IMAGES = [
-  '../../static/hair1.jpg',
-  '../../static/hair2.jpg',
-  '../../static/hair3.jpg'
+  "../../static/hair1.jpg",
+  "../../static/hair2.jpg",
+  "../../static/hair3.jpg"
 ];
 
 class Carousel extends React.Component {

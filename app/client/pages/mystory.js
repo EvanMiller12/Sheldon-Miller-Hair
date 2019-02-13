@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import styled from 'styled-components';
-import NavigationOptions from '../components/home/NavigationOptions';
-import Carousel from '../components/mystory/Carousel';
+import Link from "next/link";
+import styled from "styled-components";
+import NavigationOptions from "../components/home/NavigationOptions";
+import Carousel from "../components/mystory/Carousel";
 
 const StyledStoryPage = styled.main``;
 const StyledStorySection = styled.section`
@@ -23,16 +23,28 @@ const StyledStorySection = styled.section`
     a {
       display: inline-block;
       margin-left: 5px;
-      font-family: 'Lobster', cursive;
+      font-family: "Lobster", cursive;
       font-size: inherit;
       color: ${props => props.theme.coral};
       border-bottom: 1px solid;
-      /* padding: 10px; */
     }
   }
 
   .story-content {
     width: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    .story-content {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 696px) {
+    .story-content {
+      width: 85%;
+      text-align: center;
+    }
   }
 `;
 
