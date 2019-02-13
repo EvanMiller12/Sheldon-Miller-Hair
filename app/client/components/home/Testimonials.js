@@ -35,6 +35,30 @@ const StyledTestimonials = styled.section`
     width: 80%;
     text-align: center;
   }
+
+  @media (max-width: 696px) {
+    .heading {
+      span {
+        font-size: 4em;
+      }
+    }
+    .clients {
+      ul {
+        flex-direction: column;
+
+        li {
+          padding: 15px 0;
+        }
+      }
+    }
+    .testimonial {
+      width: 100%;
+
+      p {
+        display: none;
+      }
+    }
+  }
 `;
 
 const Testimonials = () => (
