@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledMyWorkHeader = styled.header`
   padding: 50px 0;
@@ -15,9 +15,22 @@ const StyledMyWorkHeader = styled.header`
       position: absolute;
       right: -50px;
       bottom: -54px;
-      font-family: 'Lobster', cursive;
+      font-family: "Lobster", cursive;
       color: ${props => props.theme.coral};
       text-transform: lowercase;
+    }
+  }
+
+  @media (max-width: 696px) {
+    text-align: center;
+    h1 {
+      margin-left: 0;
+      padding: 25px;
+
+      span {
+        right: 2%;
+        bottom: -15%;
+      }
     }
   }
 `;
@@ -69,6 +82,31 @@ const StyledWorkPage = styled.main`
 
     h3 {
       font-size: 2em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contain {
+      flex-direction: column;
+
+      aside {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+      }
+    }
+
+    .filter-options {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    .gallery-container {
+      width: 100%;
+      margin-top: 25px;
     }
   }
 `;
@@ -267,23 +305,23 @@ class MyWork extends React.Component {
     this.state = {
       categoryFilter: [],
       filteredImageList: null,
-      filterOptions: ['color', 'extensions', 'highlights', 'cut'],
+      filterOptions: ["color", "extensions", "highlights", "cut"],
       imageList: [
         {
-          category: 'color',
-          image: '../static/hair1.jpg'
+          category: "color",
+          image: "../static/hair1.jpg"
         },
         {
-          category: 'extensions',
-          image: '../static/hair2.jpg'
+          category: "extensions",
+          image: "../static/hair2.jpg"
         },
         {
-          category: 'highlights',
-          image: '../static/hair3.jpg'
+          category: "highlights",
+          image: "../static/hair3.jpg"
         },
         {
-          category: 'cut',
-          image: '../static/hair2.jpg'
+          category: "cut",
+          image: "../static/hair2.jpg"
         }
       ]
     };

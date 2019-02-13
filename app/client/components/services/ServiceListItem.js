@@ -66,6 +66,10 @@ const StyledServiceListItem = styled.li`
 
   @media (max-width: 696px) {
     flex-direction: column;
+
+    h3 {
+      margin-bottom: 10px;
+    }
     .r-col,
     .l-col {
       width: 100%;
