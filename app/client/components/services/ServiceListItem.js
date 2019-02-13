@@ -25,7 +25,6 @@ const StyledServiceListItem = styled.li`
 
   h4 {
     text-align: center;
-    font-size: 3em;
     color: ${props => props.theme.coral};
     font-weight: 100;
     letter-spacing: 2px;
@@ -62,6 +61,18 @@ const StyledServiceListItem = styled.li`
         color: ${props => props.theme.navy};
         background-color: #fff;
       }
+    }
+  }
+
+  @media (max-width: 696px) {
+    flex-direction: column;
+    .r-col,
+    .l-col {
+      width: 100%;
+    }
+
+    .r-col {
+      margin-top: 25px;
     }
   }
 `;

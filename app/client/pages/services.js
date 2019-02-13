@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import styled from 'styled-components';
-import ServiceList from '../components/services/ServiceList';
+import Link from "next/link";
+import styled from "styled-components";
+import ServiceList from "../components/services/ServiceList";
 
 const StyledMyWorkHeader = styled.header`
   padding: 50px 0;
@@ -16,9 +16,22 @@ const StyledMyWorkHeader = styled.header`
       position: absolute;
       right: -138px;
       bottom: -54px;
-      font-family: 'Lobster', cursive;
+      font-family: "Lobster", cursive;
       color: ${props => props.theme.coral};
       text-transform: lowercase;
+    }
+  }
+
+  @media (max-width: 696px) {
+    text-align: center;
+    h1 {
+      margin-left: 0;
+      padding: 25px;
+
+      span {
+        right: 2%;
+        bottom: -15%;
+      }
     }
   }
 `;
