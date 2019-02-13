@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledContactInfo = styled.section`
   padding-bottom: 0;
@@ -20,6 +20,23 @@ const StyledContactInfo = styled.section`
     address,
     span {
       font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-col {
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .contact-contain {
+      flex-direction: column;
+    }
+    .contact-col {
+      width: 100%;
+      height: 175px;
     }
   }
 `;
