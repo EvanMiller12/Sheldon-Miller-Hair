@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledContactHeader = styled.header`
   padding: 50px 0;
@@ -15,7 +15,7 @@ const StyledContactHeader = styled.header`
       position: absolute;
       right: -138px;
       bottom: -54px;
-      font-family: 'Lobster', cursive;
+      font-family: "Lobster", cursive;
       color: ${props => props.theme.coral};
       text-transform: lowercase;
     }
@@ -25,6 +25,23 @@ const StyledContactHeader = styled.header`
     margin-top: 15px;
     margin-left: 15%;
     font-size: 3.3em;
+  }
+
+  @media (max-width: 696px) {
+    text-align: center;
+    h1 {
+      margin-left: 0;
+      padding: 25px;
+
+      span {
+        right: 2%;
+        bottom: -15%;
+      }
+    }
+    p {
+      margin-left: 0;
+      font-size: 1.6em;
+    }
   }
 `;
 
@@ -44,6 +61,11 @@ const StyledContactPage = styled.main`
     position: relative;
     display: flex;
     flex-direction: column;
+
+    input,
+    textarea {
+      border: 1px solid ${props => props.theme.lightGrey};
+    }
 
     input {
       height: 50px;
@@ -120,6 +142,26 @@ const StyledContactPage = styled.main`
     letter-spacing: 4px;
     text-align: center;
     margin: 25px 0;
+  }
+
+  @media (max-width: 696px) {
+    form {
+      button {
+        width: 60%;
+        font-size: 2em;
+      }
+    }
+
+    .hours-section {
+      margin-bottom: -25px;
+    }
+
+    .hours-contain {
+      div {
+        height: 100px;
+        text-align: center;
+      }
+    }
   }
 `;
 const Contact = () => (

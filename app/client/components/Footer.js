@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   position: sticky;
@@ -63,6 +63,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       }
     }
   }
+
+  @media(max-width: 696px) {
+    height: 300px;
+    .footer-content {
+      top: 40%;
+      span {
+        top: -35px;
+        left: 15%;
+      }
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
 `;
 
 const Footer = () => (
@@ -76,7 +90,7 @@ const Footer = () => (
     <div className="copy-rights">
       <span>&copy; Sheldon Miller Hair</span>
       <Link href="contact">
-        <a>Contact Me</a>
+        <a>Contact</a>
       </Link>
       <div className="social">
         <a href="">

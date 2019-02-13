@@ -37,6 +37,7 @@ const StyledContactInfo = styled.section`
     .contact-col {
       width: 100%;
       height: 175px;
+      border: 1px solid ${props => props.theme.coral};
     }
   }
 `;
