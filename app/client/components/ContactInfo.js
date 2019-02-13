@@ -6,7 +6,7 @@ const StyledContactInfo = styled.section`
   .contact-contain {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    /* align-items: stretch; */
     border-top: 1px solid ${props => props.theme.coral};
   }
   .contact-col {
@@ -33,11 +33,19 @@ const StyledContactInfo = styled.section`
   @media (max-width: 767px) {
     .contact-contain {
       flex-direction: column;
+      align-items: center;
+      background-color: ${props => props.theme.coral};
+      border: none;
     }
     .contact-col {
-      width: 100%;
+      width: 99%;
       height: 175px;
-      border: 1px solid ${props => props.theme.coral};
+      margin-bottom: 2px;
+      margin-top: 0;
+      border: none;
+      background-color: #fff;
+      /* border-left: 1px solid ${props => props.theme.coral};
+      border-bottom: 1px solid ${props => props.theme.coral}; */
     }
   }
 `;

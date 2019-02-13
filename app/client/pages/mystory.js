@@ -26,7 +26,7 @@ const StyledStorySection = styled.section`
       font-family: "Lobster", cursive;
       font-size: inherit;
       color: ${props => props.theme.coral};
-      border-bottom: 1px solid;
+      border-bottom: 1px solid ${props => props.theme.lightGrey};
     }
   }
 

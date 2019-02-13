@@ -10,7 +10,7 @@ const StyledMyWorkHeader = styled.header`
     display: inline-block;
     padding: 0 100px;
     margin-left: 10%;
-    border: 1px solid;
+    border: 1px solid ${props => props.theme.lightGrey};
     span {
       position: absolute;
       right: -50px;

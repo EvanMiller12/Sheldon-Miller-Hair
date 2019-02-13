@@ -10,7 +10,7 @@ const StyledContactHeader = styled.header`
     display: inline-block;
     padding: 0 100px;
     margin-left: 10%;
-    border: 1px solid;
+    border: 1px solid ${props => props.theme.lightGrey};
     span {
       position: absolute;
       right: -138px;
@@ -157,10 +157,21 @@ const StyledContactPage = styled.main`
     }
 
     .hours-contain {
+      flex-direction: column;
+      align-items: center;
       div {
         height: 100px;
         text-align: center;
+        border: none;
+        border-bottom: 1px solid ${props => props.theme.navy};
+
+        :last-child {
+          border-bottom: none;
+        }
       }
+    }
+    .small-contain {
+      width: 90%;
     }
   }
 `;
