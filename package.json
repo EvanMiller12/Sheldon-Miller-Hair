@@ -10,8 +10,7 @@
     "deploy": "npm run build && npm run export",
     "start": "next start",
     "test": "NODE_ENV=test jest --watch",
-    "test-win": "SET NODE_ENV=test&& jest --watch",
-    "heroku-postbuild": "next build"
+    "test-win": "SET NODE_ENV=test&& jest --watch"
   },
   "repository": {
     "type": "git",

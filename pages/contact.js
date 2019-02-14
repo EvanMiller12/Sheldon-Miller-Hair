@@ -202,7 +202,6 @@ const Contact = () => (
         </div>
       </div>
     </section>
-    {/* add box shadow on days */}
     <section className="hours-section">
       <h3 className="hours-heading">My Hours</h3>
       <div className="hours-contain">
