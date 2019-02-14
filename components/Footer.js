@@ -89,14 +89,14 @@ const Footer = () => (
 
     <div className="copy-rights">
       <span>&copy; Sheldon Miller Hair</span>
-      <Link href="contact">
+      <Link href="/contact">
         <a>Contact</a>
       </Link>
       <div className="social">
-        <a href="">
+        <a href="https://www.facebook.com/sheldon.craft.9">
           <i className="fab fa-facebook-f" />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/blondedandbrushed/">
           <i className="fab fa-instagram" />
         </a>
       </div>
