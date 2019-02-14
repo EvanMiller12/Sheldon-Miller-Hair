@@ -124,7 +124,7 @@ class Nav extends React.Component {
           <span onClick={() => this.toggleMenu()} className="nav-toggle">
             <i className="fas fa-bars" />
           </span>
-          <Link href="#">
+          <Link href="/">
             <a className="logo">Sheldon Miller Hair</a>
           </Link>
           <div onClick={() => this.hideMenuOnNav()} className={this.state.nav}>
