@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styled from "styled-components";
-import NavigationOptions from "../components/home/NavigationOptions";
 import Carousel from "../components/mystory/Carousel";
 
 const StyledStoryPage = styled.main``;

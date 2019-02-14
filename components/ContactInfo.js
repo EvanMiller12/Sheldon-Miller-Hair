@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ContactInfoStyles from "./styled/ContactInfoStyles";
 
 const ContactInfo = () => (

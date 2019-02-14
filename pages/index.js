@@ -3,7 +3,6 @@ import Header from "../components/home/Header";
 import PortfolioHome from "../components/home/PortfolioHome";
 import Testimonials from "../components/home/Testimonials";
 import ServicesHome from "../components/home/ServicesHome";
-import NavigationOptions from "../components/home/NavigationOptions";
 
 const InnerContent = styled.main`
   margin: 0 auto;
@@ -15,7 +14,6 @@ const Index = () => (
     <PortfolioHome />
     <Testimonials />
     <ServicesHome />
-    <NavigationOptions />
   </InnerContent>
 );
 

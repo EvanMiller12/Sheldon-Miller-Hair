@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import styled, { ThemeProvider, injectGlobal } from "styled-components";
-import Nav from "./Nav";
 import Meta from "./Meta";
-import Footer from "./Footer";
+import Nav from "./Nav";
+import NavigationOptions from "./NavigationOptions";
 import ContactInfo from "./ContactInfo";
+import Footer from "./Footer";
 
 const theme = {
   navy: "#2e3c40",
@@ -14,7 +15,7 @@ const theme = {
 };
 
 const StyledPage = styled.div`
-  background: white;
+  background: ${props => props.theme.floralWhite};
   color: ${props => props.theme.navy};
 `;
 
@@ -138,13 +139,16 @@ class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <StyledPage>
-          <Meta />
-          <Nav />
-          {this.props.children}
-          <ContactInfo />
+        <div>
+          <StyledPage>
+            <Meta />
+            <Nav />
+            {this.props.children}
+            <NavigationOptions />
+            <ContactInfo />
+          </StyledPage>
           <Footer />
-        </StyledPage>
+        </div>
       </ThemeProvider>
     );
   }
