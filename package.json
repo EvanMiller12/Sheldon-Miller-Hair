@@ -11,6 +11,10 @@
     "test-win": "SET NODE_ENV=test&& jest --watch",
     "heroku-postbuild": "next build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvanMiller12/Sheldon-Miller-Hair.git"
+  },
   "author": "Evan Miller",
   "license": "ISC",
   "dependencies": {
