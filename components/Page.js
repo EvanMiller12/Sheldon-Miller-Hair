@@ -11,20 +11,11 @@ const theme = {
   lightGrey: "#C0C0C0",
   black: "#191818",
   floralWhite: "#fffaf0"
-  // maxWidth: "1500px"
-  // bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
 };
 
 const StyledPage = styled.div`
   background: white;
   color: ${props => props.theme.navy};
-`;
-
-const Inner = styled.div`
-  /* max-width: ${props => props.theme.maxWidth}; */
-  /* margin: 0 auto;
-  padding: 2rem; */
-  /* width: 100%; */
 `;
 
 injectGlobal`
@@ -147,15 +138,13 @@ class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <div className="allow-scrollover-footer">
-          <StyledPage>
-            <Meta />
-            <Nav />
-            <Inner>{this.props.children}</Inner>
-            <ContactInfo />
-          </StyledPage>
+        <StyledPage>
+          <Meta />
+          <Nav />
+          {this.props.children}
+          <ContactInfo />
           <Footer />
-        </div>
+        </StyledPage>
       </ThemeProvider>
     );
   }
