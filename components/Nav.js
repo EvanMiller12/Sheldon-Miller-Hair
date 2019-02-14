@@ -124,20 +124,20 @@ class Nav extends React.Component {
           <span onClick={() => this.toggleMenu()} className="nav-toggle">
             <i className="fas fa-bars" />
           </span>
-          <Link href="/">
+          <Link prefetch href="/">
             <a className="logo">Sheldon Miller Hair</a>
           </Link>
           <div onClick={() => this.hideMenuOnNav()} className={this.state.nav}>
-            <Link href="/mystory">
+            <Link prefetch href="/mystory">
               <a className="nav-link">My Story</a>
             </Link>
-            <Link href="/services">
+            <Link prefetch href="/services">
               <a className="nav-link">Services</a>
             </Link>
-            <Link href="/mywork">
+            <Link prefetch href="/mywork">
               <a className="nav-link">My Work</a>
             </Link>
-            <Link href="/contact">
+            <Link prefetch href="/contact">
               <a className="nav-link">Contact Me</a>
             </Link>
           </div>
