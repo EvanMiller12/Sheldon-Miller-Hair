@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled, { ThemeProvider, injectGlobal } from "styled-components";
 import Meta from "./Meta";
 import Nav from "./Nav";
-import NavigationOptions from "./NavigationOptions";
+import NavOptions from "./NavOptions";
 import ContactInfo from "./ContactInfo";
 import Footer from "./Footer";
 
@@ -15,7 +15,7 @@ const theme = {
 };
 
 const StyledPage = styled.div`
-  background: ${props => props.theme.floralWhite};
+  background: #fff;
   color: ${props => props.theme.navy};
 `;
 
@@ -144,7 +144,7 @@ class Page extends Component {
             <Meta />
             <Nav />
             {this.props.children}
-            <NavigationOptions />
+            <NavOptions />
             <ContactInfo />
           </StyledPage>
           <Footer />
