@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styled from "styled-components";
 import NavStyles from "./styled/NavStyles";
 
 class Nav extends React.Component {
