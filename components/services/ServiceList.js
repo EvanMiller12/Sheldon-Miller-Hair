@@ -1,11 +1,5 @@
-import Link from "next/link";
-import styled from "styled-components";
+import ServiceListStyles from "../styled/services/ServiceListStyles";
 import ServiceListItem from "./ServiceListItem";
-// scope styles
-
-const StyledServiceList = styled.ul`
-  width: 80%;
-`;
 
 class ServiceList extends React.Component {
   constructor() {
@@ -28,9 +22,9 @@ class ServiceList extends React.Component {
   }
   render() {
     return (
-      <StyledServiceList>
+      <ServiceListStyles>
         {Object.keys(this.state.serviceDetail).map(this.renderService)}
-      </StyledServiceList>
+      </ServiceListStyles>
     );
   }
 }
