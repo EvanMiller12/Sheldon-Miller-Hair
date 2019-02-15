@@ -42,19 +42,6 @@ const FooterStyles = styled.footer`
     padding: 20px 0;
     font-size: 18px;
     color: ${props => props.theme.floralWhite};
-
-    a {
-      color: ${props => props.theme.floralWhite};
-      font-size: 18px;
-    }
-    .social {
-      color: ${props => props.theme.floralWhite};
-      font-size: 25px;
-
-      .fa-facebook-f {
-        margin-right: 25px;
-      }
-    }
   }
 
   @media (max-width: 696px) {

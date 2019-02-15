@@ -22,10 +22,14 @@ const ContactInfo = () => (
         <h5>Social</h5>
         <ul>
           <li>
-            <a href="https://facebook.com/">Facebook</a>
+            <a href="https://www.facebook.com/sheldon.craft.9">
+              <i className="fab fa-facebook-f" /> Facebook
+            </a>
           </li>
           <li>
-            <a href="https://instagram.com/">Instagram</a>
+            <a href="https://www.instagram.com/blondedandbrushed/">
+              <i className="fab fa-instagram" /> Instagram
+            </a>
           </li>
         </ul>
       </div>
