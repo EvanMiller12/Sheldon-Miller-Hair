@@ -1,4 +1,3 @@
-import Link from "next/link";
 import FooterStyles from "./styled/FooterStyles";
 
 const Footer = () => (

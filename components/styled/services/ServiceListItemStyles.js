@@ -53,7 +53,7 @@ const ServiceListItemStyles = styled.li`
       color: #fff;
       background-color: ${props => props.theme.navy};
       border: 2px solid ${props => props.theme.navy};
-
+      transition: ease-in 0.3s;
       :hover {
         color: ${props => props.theme.navy};
         background-color: #fff;

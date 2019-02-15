@@ -19,6 +19,14 @@ const ContactInfoStyles = styled.section`
     span {
       font-size: 1.5em;
     }
+
+    a {
+      transition: ease-in-out 0.3s;
+
+      :hover {
+        color: ${props => props.theme.coral};
+      }
+    }
   }
 
   @media (max-width: 768px) {

@@ -59,6 +59,7 @@ const NavStyles = styled.nav`
       .nav-link {
         margin: 0 1.5rem;
         color: ${props => props.theme.navy};
+        transition: ease-in-out 0.3s;
 
         :last-child {
           margin-right: 0;

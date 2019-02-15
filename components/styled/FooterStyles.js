@@ -52,9 +52,6 @@ const FooterStyles = styled.footer`
         top: -35px;
         left: 15%;
       }
-      a {
-        margin-left: 10px;
-      }
     }
   }
 `;

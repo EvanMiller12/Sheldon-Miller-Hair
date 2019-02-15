@@ -8,14 +8,13 @@ const StyledNavigationOptions = styled.section`
     align-items: center;
 
     a {
-      border: 1px solid;
+      border: 1px solid ${props => props.theme.navy};
       padding: 10px;
       text-align: center;
     }
 
     a:hover {
-      color: #fff;
-      background-color: ${props => props.theme.navy};
+      color: ${props => props.theme.coral};
     }
   }
 `;

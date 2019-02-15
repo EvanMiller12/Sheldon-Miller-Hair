@@ -1,86 +1,8 @@
 import Link from "next/link";
-import styled from "styled-components";
+import ServicesStyles from "../styled/home/ServiceStyles";
 
-// scope styles
-
-const StyledServices = styled.section`
-
-  .service-section {
-    display: flex;
-    /* flex-direction:column; */
-    height: 90vh;
-  }
-
-  .service-section > :first-child {
-    background-color: ${props => props.theme.coral};
-  }
-
-  .service-section > :nth-child(2) {
-    background-color: ${props => props.theme.lightGrey};
-  }
-
-  .service-section > :last-child {
-    background-color: ${props => props.theme.navy};
-  }
-
-  .service-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50%;
-    color: #fff;
-    padding: 5px;
-    /* background-color: ${props => props.theme.navy}; */
-
-    h3 {
-      margin: 0;
-    }
-
-    ul {
-      font-size: 1.5em;
-    }
-
-    a {
-      color: #fff;
-      border: 1px solid;
-      padding: 0 10px;
-      margin-top: 20px;
-    }
-  }
-  .service-img {
-    height: 50%;
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
-   @media(max-width: 1024px) {
-     .service-section {
-       height: 50vh;
-     }
-   }
-   @media(max-width: 768px) {
-    .service-content a {
-      margin-top: 10px;
-    }
-   }
-   @media(max-width: 696px) {
-     .service-section {
-       display: block;
-       height: auto;
-     }
-     .service-content {
-       padding: 4em 0;
-     }
-     .service-img {
-       display: none;
-     }
-   }
-`;
 const ServicesHome = () => (
-  <StyledServices>
+  <ServicesStyles>
     <div className="service-section">
       <div className="service-wrapper">
         <div className="service-content">
@@ -96,7 +18,7 @@ const ServicesHome = () => (
               Extensions- <span>priced per strand</span>
             </li>
           </ul>
-          <Link href="">
+          <Link href="/services">
             <a>SEE MORE</a>
           </Link>
         </div>
@@ -149,7 +71,7 @@ const ServicesHome = () => (
         </div>
       </div>
     </div>
-  </StyledServices>
+  </ServicesStyles>
 );
 
 export default ServicesHome;
