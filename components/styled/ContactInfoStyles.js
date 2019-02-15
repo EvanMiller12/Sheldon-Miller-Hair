@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 const ContactInfoStyles = styled.section`
-  padding-bottom: 0;
+  padding: 25px 0;
   .contact-contain {
     display: flex;
     justify-content: space-around;
-    /* align-items: stretch; */
     border-top: 1px solid ${props => props.theme.coral};
   }
   .contact-col {
