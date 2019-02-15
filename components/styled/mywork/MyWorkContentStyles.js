@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MyWorkContentStyles = styled.main`
+const MyWorkContentStyles = styled.section`
   width: 100%;
 
   .contain {
